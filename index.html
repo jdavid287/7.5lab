@@ -6,3 +6,13 @@
 <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
     <img alt="thumbnail" x-bind:src="thumbImage" />
 </div>
+
+<div>
+<script>
+    fetch('https://dummyjson.com/image/200x100')
+    .then(response => response.blob()) // Convert response to blob
+    .then(blob => {
+  console.log('Fetched image blob:', blob);
+})
+</script>
+</div>
