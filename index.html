@@ -7,7 +7,6 @@
     <img alt="thumbnail" x-bind:src="thumbImage" />
 </div>
 
-<div>
-    x-data="{thumbImage: $fetchjson('https://cdn.dummyjson.com/product-images/3/1', jsonItem='images')}">
+<div x-data="{thumbImage: $fetchjson('https://cdn.dummyjson.com/products/3/1', jsonItem='images')}">
     <img alt="images" x-bind:scr="images" />
 </div>
