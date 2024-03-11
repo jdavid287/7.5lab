@@ -1,0 +1,8 @@
+<head>
+    <script defer src="https://cdn.jsdelivr.net/gh/hankhank10/alpine-fetch@main/alpine-fetch.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <img alt="thumbnail" x-bind:src="thumbImage" />
+</div>
