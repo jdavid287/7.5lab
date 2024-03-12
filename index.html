@@ -4,11 +4,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <div class="img-container" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
         <img alt="thumbnail" x-bind:src="thumbImage" />
     </div>
     
-    <div id="thumbnail"></div>
+    <div class="img-container" id="thumbnail"></div>
     <script>
       function displayHTML(string) {
         const mainImage = document.getElementById('thumbnail');
