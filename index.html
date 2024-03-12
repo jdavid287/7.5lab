@@ -7,11 +7,11 @@
 </head>
 <body class="bg-black">
   <h1 class="text-zinc-50 text-5xl flex-col flex items-center my-8">IPHONE</h1>
-    <div class="rounded-md flex-col flex items-center my-16" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
+    <div class="flex-col flex items-center my-16 rounded-t-lg" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/1', jsonItem='thumbnail')}">
         <img alt="thumbnail" x-bind:src="thumbImage" />
     </div>
 
-  <div id="thumbnail" class="rounded-md flex-col flex items-center" >
+  <div id="thumbnail" class="rounded-b-lg flex-col flex items-center" >
     <script>
       function displayHTML(string) {
   const mainImage = document.getElementById('thumbnail');
